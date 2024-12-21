@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pleasure Box</title>
+  <link rel="stylesheet" href="css/style.css"> <!-- Link to external CSS file -->
+</head>
+<style>
+  body {
+    background-image: url('img/beach.jpg'); /* Path to beach image */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+  }
+</style>
+  <header>
+    <div class="logo">
+      <h1>Мебель для ванной "Pleasure Box"</h1> <!-- Site name -->
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#">Главная</a></li> <!-- Ссылка на главную -->
+        <li><a href="account.html">Аккаунт</a></li> <!-- Ссылка на акк -->
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Мясо -->
+  <main>
+    <!-- Вступление -->
+    <section class="intro fancy-box">
+      <h2>Добро пожаловать в наш магазин!</h2>
+      <p>Мы предлагаем стильную и качественную мебель для вашей ванной комнаты.</p>
+    </section>
+  
+    <section class="advantages-and-partners" style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 20px; align-items: start;">
+      <!-- Преимущества -->
+      <div class="advantages fancy-box">
+        <h3>Наши преимущества:</h3>
+        <ul>
+          <li>Высокое качество материалов</li>
+          <li>Современный дизайн</li>
+          <li>Быстрая доставка</li>
+          <li>Гарантия на продукцию</li>
+        </ul>
+      </div>
+    
+      <!--Партнеры-->
+      <div class="partners-box fancy-box">
+        <h3>Партнёры "Pleasure Box"</h3>
+        <div class="partners-logos">
+          <img src="img/Partner1.png" alt="Партнёр 1">
+          <img src="img/partner2.jpg" alt="Партнёр 2">
+          <img src="img/partner3.png" alt="Партнёр 3">
+        </div>
+      </div>
+    
+      <!--Карусель-->
+      <div class="carousel fancy-box">
+        <h3>Сообщения спонсоров</h3>
+        <div class="carousel-container">
+          <img src="img/Ad1.jpg" alt="Проект 1" class="carousel-image">
+          <img src="img/ad2.jpg" alt="Проект 2" class="carousel-image hidden">
+          <img src="img/ad3.jpg" alt="Проект 3" class="carousel-image hidden">
+        </div>
+      </div>
+      <!-- Переключалка -->
+      <div class="image-slider-fade fancy-box">
+        <img src="img/smile.png" alt="Sample 1" class="slider-image active">
+        <img src="img/smile2.png" alt="Sample 2" class="slider-image">
+        <img src="img/smile3.png" alt="Sample 3" class="slider-image">
+      
+        <div class="slider-buttons">
+          <button class="slider-button prev-button">&lt;</button>
+          <button class="slider-button next-button">&gt;</button>
+        </div>
+      </div>
+
+
+
+<!-- Forma -->
+
+<div class="fancy-box" style="margin-left: 40px;">
+  <h2>Форма для связи с вами</h2>
+  <form id="contact-form" novalidate>
+      <div class="form-group">
+          <label for="name">Имя</label>
+          <input 
+              type="text" 
+              id="name" 
+              name="name" 
+              placeholder="Введите ваше имя" 
+              pattern="^[A-Za-zА-Яа-яЁё\s]{2,50}$"
+              required
+          >
+          <div class="tooltip">Ваше полное имя (Только буквы).</div>
+      </div>
+
+      <div class="form-group">
+          <label for="email">Email</label>
+          <input 
+              type="email" 
+              id="email" 
+              name="email" 
+              placeholder="Введите ваш адрес электронной почты" 
+              pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" 
+              required
+          >
+          <div class="tooltip">Введите свой адрес почты (example@example.com).</div>
+      </div>
+
+      <div class="form-group">
+          <label for="phone">Номер телефона</label>
+          <input 
+              type="tel" 
+              id="phone" 
+              name="phone" 
+              placeholder="Введите ваш номер телефона" 
+              pattern="^\+?[0-9]{10,15}$" 
+              required
+          >
+          <div class="tooltip">Введите свой номер телефона.</div>
+      </div>
+      <button type="submit">Submit</button>
+
+
+    </section>
+    
+    
+
+    <section class="items-container">
+      <!-- Итем -->
+      <div class="item-box sand-box">
+        <img src="img/Basin1.jpg" alt="Item 1">
+        <h3>Деревянная раковина</h3>
+        <p>Элегантная раковина из дуба.</p>
+        <span class="price">₽15,000</span>
+      </div>
+      <!-- Итем -->
+      <div class="item-box sand-box">
+        <img src="img/basin2.jpg" alt="Item 2">
+        <h3>Раковина "Морские побрякушки"</h3>
+        <p>Компактное решение для ванны в стиле пляжа .</p>
+        <span class="price">₽7,000</span>
+      </div>
+      <!-- Итем -->
+      <div class="item-box sand-box">
+        <img src="img/basin3.jpg" alt="Item 3">
+        <h3>Стильный Умывальник "Модерн"</h3>
+        <p>Современный умывальник с оригинальным дизайном.</p>
+        <span class="price">₽4,500</span>
+      </div>
+        <!-- Итем -->
+      <div class="item-box sand-box">
+        <img src="img/Basin1.jpg" alt="Item 1">
+        <h3>Деревянная раковина</h3>
+        <p>Элегантная раковина из дуба.</p>
+        <span class="price">₽15,000</span>
+      </div>
+      <!-- Итем -->
+      <div class="item-box sand-box">
+        <img src="img/basin2.jpg" alt="Item 2">
+        <h3>Раковина "Морские побрякушки"</h3>
+        <p>Компактное решение для ванны в стиле пляжа .</p>
+        <span class="price">₽7,000</span>
+      </div>
+      <!-- Итем -->
+      <div class="item-box sand-box">
+        <img src="img/basin3.jpg" alt="Item 3">
+        <h3>Стильный Умывальник "Модерн"</h3>
+        <p>Современный умывальник с оригинальным дизайном.</p>
+        <span class="price">₽4,500</span>
+      </div>
+    </section>
+  </main>
+
+  <section class="reviews fancy-box">
+    <h3 style="margin-left: 15px;">Отзывы наших покупателей:</h3>
+    <div class="review">
+      <p class="fancy-box">"Отличная мебель! Очень доволен покупкой."</p>
+      <p>- Иван П.</p>
+    </div>
+    <div class="review">
+      <p class="fancy-box">"Быстрая доставка и качественная мебель!"</p>
+      <p>- Ольга К.</p>
+    </div>
+  </section>
+
+  <!-- Пятка -->
+  <footer>
+    <p>Контакты: Телефон: +7 123 456 7890 | Email: contact@mebel.ru</p> 
+  </footer>
+<script src="Jscript/carousel.js"></script>
+</body>
+<script>
+  document.getElementById('contact-form').addEventListener('submit', function(event) {
+      const form = event.target;
+      if (!form.checkValidity()) {
+          event.preventDefault();
+          alert('Проверьте правильность заполненных полей');
+      } else {
+          event.preventDefault(); // Prevent actual submission for demo purposes
+          alert('Мы с вами свяжемся');
+      }
+  });
+</script>
+</html>
