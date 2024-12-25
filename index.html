@@ -92,7 +92,7 @@
               type="text" 
               id="name" 
               name="name" 
-              placeholder="Введите ваше имя" 
+              placeholder="Васильев Андрей Сергеевич" 
               pattern="^[A-Za-zА-Яа-яЁё\s]{2,50}$"
               required
           >
@@ -105,11 +105,11 @@
               type="email" 
               id="email" 
               name="email" 
-              placeholder="Введите ваш адрес электронной почты" 
+              placeholder="example@example.com" 
               pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" 
               required
           >
-          <div class="tooltip">Введите свой адрес почты (example@example.com).</div>
+          <div class="tooltip">Введите свой адрес почты.</div>
       </div>
 
       <div class="form-group">
@@ -118,7 +118,7 @@
               type="tel" 
               id="phone" 
               name="phone" 
-              placeholder="Введите ваш номер телефона" 
+              placeholder="+70000000000" 
               pattern="^\+?[0-9]{10,15}$" 
               required
           >
@@ -202,7 +202,7 @@
           event.preventDefault();
           alert('Проверьте правильность заполненных полей');
       } else {
-          event.preventDefault(); // Prevent actual submission for demo purposes
+          event.preventDefault();
           alert('Мы с вами свяжемся');
       }
   });
